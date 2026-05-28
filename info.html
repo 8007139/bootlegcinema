@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>info</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 40px 20px;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 500px;
+        width: 100%;
+        gap: 18px;
+      }
+      .container img.top-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 4px;
+      }
+      .container p {
+        font-family: "Times New Roman", Times, serif;
+        font-size: clamp(14px, 2.2vw, 18px);
+        color: #111111;
+        line-height: 1.75;
+        letter-spacing: 0.01em;
+      }
+      .container a {
+        font-family: "Times New Roman", Times, serif;
+        font-size: clamp(14px, 2.2vw, 18px);
+        color: #111111;
+        text-underline-offset: 3px;
+      }
+      .container a:hover {
+        color: #555555;
+      }
+      .back-btn {
+        margin-top: 12px;
+        background: none;
+        border: none;
+        font-family: "Times New Roman", Times, serif;
+        font-size: clamp(14px, 2.2vw, 18px);
+        color: #111111;
+        cursor: pointer;
+        letter-spacing: 0.01em;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        padding: 0;
+      }
+      .back-btn:hover {
+        color: #555555;
+      }
+      @media (max-width: 480px) {
+        body {
+          padding: 40px 36px;
+        }
+        .container p,
+        .container a,
+        .back-btn {
+          font-size: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="top-icon" src="copy.svg" alt="" />
+      <p>
+        bootleg cinema is a series of outdoor diy screenings happening in
+        eindhoven area focused on queer &amp; queer-adjacent movies
+      </p>
+      <p>
+        all events are free, fully independent, and organised outside
+        institutional spaces
+      </p>
+      <p>
+        for all the lastest updates join the
+        <a
+          href="https://chat.whatsapp.com/D3HnjXv2cxaB8ssxXcl4xE?s=cl&p=i&ilr=4&amv=2"
+          target="_blank"
+          >whatsapp group</a
+        >
+      </p>
+      <button
+        class="back-btn"
+        onclick="window.location.href = 'index.html'"
+      >
+        back
+      </button>
+    </div>
+  </body>
+</html>
